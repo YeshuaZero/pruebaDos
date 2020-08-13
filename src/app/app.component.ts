@@ -1,11 +1,18 @@
-import {Component} from '@angular/core';
+import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
-  colorOptions: string[] = ['#5d77f5', '#0fd085', '#ffba5b', '#f95e62', 'lightpink'];
-  initialColor: string = 'black';
+  colorOptions: string[] = [
+    "#5d77f5",
+    "#0fd085",
+    "#ffba5b",
+    "#f95e62",
+    "lightpink",
+  ];
+  initialColor: string = "black";
+
 }
